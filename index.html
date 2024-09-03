@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a9da22d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <h1>FD Calculator - by Hritik Sharma</h1>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <div class="form-group">
+                <label for="principle">Principle Amount:</label>
+                <div class="input-div">
+                    <i class="fa-solid fa-coins"></i>
+                    <input type="number" id="principle" name="principle" placeholder="Enter principle amount here">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <div class="input-div">
+                    <i class="fa-solid fa-percent"></i>
+                    <input type="number" id="interestRate" name="interest-rate" placeholder="Enter interest rate here">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tenure">Tenure (in years):</label>
+                <div class="input-div">
+                    <i class="fa-solid fa-clock"></i>
+                    <input type="number" id="tenure" placeholder="Enter tenure in years here">
+                </div>
+            </div>
+            <div class="btn">
+                <button id="calculateBtn" class="calculate-btn" onclick="CalculateMaturityAmount()">Calculate</button>
+                <p id="result" class="result">Maturity amount</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
